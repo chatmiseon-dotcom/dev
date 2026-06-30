@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>A&N Dev | 소프트웨어 & 펌웨어 개발 의뢰</title>
+  <meta name="description" content="A&N Dev - 웹/앱 소프트웨어 개발, 펌웨어/임베디드 개발, 기술지원까지. 전문적인 개발 의뢰는 A&N Dev에 맡기세요." />
+  <meta name="keywords" content="개발 의뢰, 펌웨어 개발, 임베디드, 웹 개발, 앱 개발, 소프트웨어, A&N Dev" />
+  <meta property="og:title" content="A&N Dev | 소프트웨어 & 펌웨어 개발 의뢰" />
+  <meta property="og:description" content="웹/앱부터 펌웨어까지, 전문 개발팀이 함께합니다." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">
+        <div class="logo-icon">
+          <span>A</span><span class="amp">&</span><span>N</span>
+        </div>
+        <div class="logo-text">
+          <span class="logo-main">A&N Dev</span>
+          <span class="logo-sub">에이엔디브</span>
+        </div>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#services" data-i18n="nav.services">서비스</a></li>
+        <li><a href="#process" data-i18n="nav.process">프로세스</a></li>
+        <li><a href="#portfolio" data-i18n="nav.portfolio">포트폴리오</a></li>
+        <li><a href="#contact" class="nav-cta" data-i18n="nav.contact">문의하기</a></li>
+      </ul>
+      <div class="nav-right">
+        <button class="lang-toggle" id="langToggle" aria-label="언어 전환">
+          <span class="lang-kr active" id="langKr">KR</span>
+          <span class="lang-divider">|</span>
+          <span class="lang-en" id="langEn">EN</span>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="메뉴">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <div class="hero-grid"></div>
+      <div class="hero-orb orb1"></div>
+      <div class="hero-orb orb2"></div>
+      <div class="hero-orb orb3"></div>
+      <div class="circuit-lines">
+        <svg viewBox="0 0 1200 600" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+          <path class="circuit-path" d="M0,200 L200,200 L200,100 L400,100 L400,300 L600,300" stroke-dasharray="8 4"/>
+          <path class="circuit-path" d="M1200,150 L1000,150 L1000,250 L800,250 L800,150 L650,150" stroke-dasharray="8 4"/>
+          <path class="circuit-path" d="M100,500 L300,500 L300,400 L500,400" stroke-dasharray="8 4"/>
+          <path class="circuit-path" d="M1100,450 L900,450 L900,350 L750,350" stroke-dasharray="8 4"/>
+          <circle class="circuit-node" cx="200" cy="200" r="4"/>
+          <circle class="circuit-node" cx="400" cy="100" r="4"/>
+          <circle class="circuit-node" cx="1000" cy="150" r="4"/>
+          <circle class="circuit-node" cx="800" cy="250" r="4"/>
+          <circle class="circuit-node" cx="300" cy="500" r="4"/>
+        </svg>
+      </div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge" data-i18n="hero.badge">✦ 소프트웨어부터 펌웨어까지</div>
+      <h1 class="hero-title">
+        <span data-i18n="hero.title1">당신의 아이디어를</span>
+        <span class="gradient-text" data-i18n="hero.title2">현실로 만듭니다</span>
+      </h1>
+      <p class="hero-desc" data-i18n="hero.desc">
+        웹·앱 개발부터 임베디드 펌웨어까지 — A&N Dev가 기획부터 납품까지<br/>
+        전문적으로 지원합니다.
+      </p>
+      <div class="hero-btns">
+        <a href="#contact" class="btn-primary" data-i18n="hero.cta1">지금 문의하기</a>
+        <a href="#services" class="btn-secondary" data-i18n="hero.cta2">서비스 보기</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num" data-count="100">0</span><span class="stat-plus">+</span>
+          <span class="stat-label" data-i18n="stat.projects">완료 프로젝트</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num" data-count="98">0</span><span class="stat-plus">%</span>
+          <span class="stat-label" data-i18n="stat.satisfaction">고객 만족도</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num" data-count="5">0</span><span class="stat-plus">+</span>
+          <span class="stat-label" data-i18n="stat.years">년 경력</span>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-hint">
+      <div class="scroll-mouse"><div class="scroll-wheel"></div></div>
+      <span data-i18n="scroll">스크롤</span>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag" data-i18n="services.tag">SERVICES</span>
+        <h2 data-i18n="services.title">무엇이든 개발합니다</h2>
+        <p data-i18n="services.desc">소프트웨어와 하드웨어의 경계를 넘어, 다양한 분야의 개발을 지원합니다.</p>
+      </div>
+      <div class="services-grid">
+
+        <div class="service-card" data-delay="0">
+          <div class="card-glow"></div>
+          <div class="service-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="4" y="8" width="40" height="28" rx="3" stroke="currentColor" stroke-width="2.5"/>
+              <path d="M16 44h16M20 36v8M28 36v8" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+              <path d="M14 22l4 4-4 4M20 30h8" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3 data-i18n="svc1.title">웹 개발</h3>
+          <p data-i18n="svc1.desc">반응형 웹사이트, 관리자 대시보드, 쇼핑몰, SaaS 플랫폼 등 다양한 웹 솔루션을 구축합니다.</p>
+          <ul class="service-tags">
+            <li>React / Next.js</li>
+            <li>Vue / Nuxt</li>
+            <li>Node.js</li>
+            <li>REST API</li>
+          </ul>
+        </div>
+
+        <div class="service-card featured" data-delay="100">
+          <div class="card-glow"></div>
+          <div class="featured-badge" data-i18n="svc.featured">인기</div>
+          <div class="service-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="6" y="6" width="16" height="16" rx="2" stroke="currentColor" stroke-width="2.5"/>
+              <rect x="26" y="6" width="16" height="16" rx="2" stroke="currentColor" stroke-width="2.5"/>
+              <rect x="6" y="26" width="16" height="16" rx="2" stroke="currentColor" stroke-width="2.5"/>
+              <path d="M34 26v16M26 34h16" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3 data-i18n="svc2.title">앱 개발</h3>
+          <p data-i18n="svc2.desc">iOS / Android 네이티브 앱 및 크로스플랫폼 앱을 전문적으로 개발합니다.</p>
+          <ul class="service-tags">
+            <li>Flutter</li>
+            <li>React Native</li>
+            <li>Swift</li>
+            <li>Kotlin</li>
+          </ul>
+        </div>
+
+        <div class="service-card featured" data-delay="200">
+          <div class="card-glow"></div>
+          <div class="featured-badge fw-badge" data-i18n="svc.firmware">펌웨어</div>
+          <div class="service-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="12" y="10" width="24" height="28" rx="2" stroke="currentColor" stroke-width="2.5"/>
+              <path d="M8 18h4M8 24h4M8 30h4M36 18h4M36 24h4M36 30h4" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+              <rect x="17" y="16" width="14" height="8" rx="1" stroke="currentColor" stroke-width="2"/>
+              <circle cx="21" cy="30" r="2" stroke="currentColor" stroke-width="2"/>
+              <circle cx="27" cy="30" r="2" stroke="currentColor" stroke-width="2"/>
+            </svg>
+          </div>
+          <h3 data-i18n="svc3.title">펌웨어 / 임베디드</h3>
+          <p data-i18n="svc3.desc">MCU 펌웨어, RTOS, 드라이버 개발 등 임베디드 소프트웨어 전 분야를 지원합니다.</p>
+          <ul class="service-tags">
+            <li>STM32 / ESP32</li>
+            <li>Arduino</li>
+            <li>FreeRTOS</li>
+            <li>C / C++</li>
+          </ul>
+        </div>
+
+        <div class="service-card" data-delay="300">
+          <div class="card-glow"></div>
+          <div class="service-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M24 6l18 10.5v15L24 42 6 31.5v-15L24 6z" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
+              <path d="M24 6v36M6 16.5l18 10.5 18-10.5" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3 data-i18n="svc4.title">유지보수 & 기술지원</h3>
+          <p data-i18n="svc4.desc">기존 시스템 유지보수, 버그 수정, 성능 최적화, 지속적인 기술 지원 서비스를 제공합니다.</p>
+          <ul class="service-tags">
+            <li>버그 수정</li>
+            <li>성능 최적화</li>
+            <li>코드 리뷰</li>
+            <li>기술 상담</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="process" id="process">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag" data-i18n="process.tag">HOW WE WORK</span>
+        <h2 data-i18n="process.title">개발 프로세스</h2>
+        <p data-i18n="process.desc">체계적인 단계별 프로세스로 프로젝트를 성공적으로 완수합니다.</p>
+      </div>
+      <div class="process-steps">
+        <div class="step" data-delay="0">
+          <div class="step-number">01</div>
+          <div class="step-icon">
+            <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M16 4C9.37 4 4 9.37 4 16s5.37 12 12 12 12-5.37 12-12S22.63 4 16 4zm0 5.5a3 3 0 110 6 3 3 0 010-6zm0 17a9 9 0 01-7-3.37c.04-2.32 4.67-3.59 7-3.59 2.32 0 6.96 1.27 7 3.59A9 9 0 0116 26.5z" fill="currentColor"/>
+            </svg>
+          </div>
+          <h4 data-i18n="step1.title">상담 & 분석</h4>
+          <p data-i18n="step1.desc">요구사항 파악, 기술 검토, 프로젝트 범위 정의</p>
+        </div>
+        <div class="step-arrow">→</div>
+        <div class="step" data-delay="100">
+          <div class="step-number">02</div>
+          <div class="step-icon">
+            <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M28 6H4v20h24V6zM4 10h24" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <path d="M9 15h14M9 20h8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h4 data-i18n="step2.title">기획 & 설계</h4>
+          <p data-i18n="step2.desc">아키텍처 설계, 일정 수립, 견적 제안</p>
+        </div>
+        <div class="step-arrow">→</div>
+        <div class="step" data-delay="200">
+          <div class="step-number">03</div>
+          <div class="step-icon">
+            <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M10 20l4-4-4-4M16 20h6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <rect x="4" y="4" width="24" height="24" rx="2" stroke="currentColor" stroke-width="2"/>
+            </svg>
+          </div>
+          <h4 data-i18n="step3.title">개발 & 구현</h4>
+          <p data-i18n="step3.desc">단계별 개발, 코드 리뷰, 중간 보고</p>
+        </div>
+        <div class="step-arrow">→</div>
+        <div class="step" data-delay="300">
+          <div class="step-number">04</div>
+          <div class="step-icon">
+            <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M6 16l8 8L26 8" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h4 data-i18n="step4.title">테스트 & 납품</h4>
+          <p data-i18n="step4.desc">품질 검증, 문서화, 최종 납품 및 사후 지원</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO -->
+  <section class="portfolio" id="portfolio">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag" data-i18n="portfolio.tag">PORTFOLIO</span>
+        <h2 data-i18n="portfolio.title">주요 프로젝트</h2>
+        <p data-i18n="portfolio.desc">다양한 분야에서 축적된 개발 경험</p>
+      </div>
+      <div class="portfolio-grid">
+        <div class="portfolio-card" data-delay="0">
+          <div class="portfolio-img firmware">
+            <div class="port-icon">
+              <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="16" y="12" width="32" height="40" rx="3" stroke="currentColor" stroke-width="2.5"/>
+                <path d="M8 24h8M8 32h8M8 40h8M48 24h8M48 32h8M48 40h8" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+                <rect x="22" y="20" width="20" height="12" rx="1.5" stroke="currentColor" stroke-width="2"/>
+                <circle cx="28" cy="40" r="3" stroke="currentColor" stroke-width="2"/>
+                <circle cx="36" cy="40" r="3" stroke="currentColor" stroke-width="2"/>
+              </svg>
+            </div>
+            <span class="port-badge fw" data-i18n="badge.firmware">펌웨어</span>
+          </div>
+          <div class="portfolio-info">
+            <h4 data-i18n="port1.title">IoT 센서 모듈 펌웨어</h4>
+            <p data-i18n="port1.desc">STM32 기반 다채널 센서 데이터 수집 및 무선 전송 시스템</p>
+            <div class="port-tags"><span>STM32</span><span>FreeRTOS</span><span>BLE</span></div>
+          </div>
+        </div>
+        <div class="portfolio-card" data-delay="100">
+          <div class="portfolio-img webapp">
+            <div class="port-icon">
+              <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="6" y="10" width="52" height="36" rx="3" stroke="currentColor" stroke-width="2.5"/>
+                <path d="M22 54h20M27 46v8M37 46v8" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+                <path d="M20 28l6 6-6 6M30 34h14" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <span class="port-badge web" data-i18n="badge.web">웹</span>
+          </div>
+          <div class="portfolio-info">
+            <h4 data-i18n="port2.title">물류 관리 대시보드</h4>
+            <p data-i18n="port2.desc">실시간 재고 추적 및 배송 현황 통합 관리 웹 플랫폼</p>
+            <div class="port-tags"><span>React</span><span>Node.js</span><span>PostgreSQL</span></div>
+          </div>
+        </div>
+        <div class="portfolio-card" data-delay="200">
+          <div class="portfolio-img mobileapp">
+            <div class="port-icon">
+              <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="18" y="4" width="28" height="56" rx="4" stroke="currentColor" stroke-width="2.5"/>
+                <path d="M28 52h8" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+                <path d="M24 16h16M24 24h12M24 32h8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <span class="port-badge app" data-i18n="badge.app">앱</span>
+          </div>
+          <div class="portfolio-info">
+            <h4 data-i18n="port3.title">헬스케어 모바일 앱</h4>
+            <p data-i18n="port3.desc">웨어러블 기기 연동 건강 데이터 모니터링 iOS/Android 앱</p>
+            <div class="port-tags"><span>Flutter</span><span>BLE</span><span>Firebase</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="contact-wrapper">
+        <div class="contact-info">
+          <span class="section-tag" data-i18n="contact.tag">CONTACT</span>
+          <h2 data-i18n="contact.title">프로젝트를<br/>시작해봅시다</h2>
+          <p data-i18n="contact.desc">아이디어가 있으신가요? 어떤 분야든 먼저 문의해 주세요.<br/>빠르게 검토 후 연락드립니다.</p>
+          <div class="contact-card">
+            <div class="contact-detail">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2M12 11a4 4 0 100-8 4 4 0 000 8z" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+              </div>
+              <div>
+                <span class="contact-label" data-i18n="contact.ceo">대표자</span>
+                <span class="contact-value">노미선 (Roh Mi-seon)</span>
+              </div>
+            </div>
+            <div class="contact-detail">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z" stroke="currentColor" stroke-width="2"/>
+                  <polyline points="9 22 9 12 15 12 15 22" stroke="currentColor" stroke-width="2"/>
+                </svg>
+              </div>
+              <div>
+                <span class="contact-label" data-i18n="contact.company">회사명</span>
+                <span class="contact-value">A&N Dev (에이엔디브)</span>
+              </div>
+            </div>
+          </div>
+          <div class="contact-note" data-i18n="contact.note">
+            ✦ 펌웨어 / 임베디드 개발 문의도 환영합니다
+          </div>
+        </div>
+
+        <div class="contact-form-wrapper">
+          <form class="contact-form" id="contactForm" novalidate>
+            <div class="form-group">
+              <label for="name" data-i18n="form.name">이름 / 회사명</label>
+              <input type="text" id="name" name="name" placeholder="홍길동 / (주)ABC" required />
+              <span class="form-error" data-i18n="err.name">이름을 입력해 주세요.</span>
+            </div>
+            <div class="form-group">
+              <label for="email" data-i18n="form.email">이메일</label>
+              <input type="email" id="email" name="email" placeholder="your@email.com" required />
+              <span class="form-error" data-i18n="err.email">올바른 이메일을 입력해 주세요.</span>
+            </div>
+            <div class="form-group">
+              <label for="type" data-i18n="form.type">개발 분야</label>
+              <select id="type" name="type" required>
+                <option value="" disabled selected data-i18n="form.type.placeholder">분야를 선택하세요</option>
+                <option value="web" data-i18n="form.type.web">웹 개발</option>
+                <option value="app" data-i18n="form.type.app">앱 개발</option>
+                <option value="firmware" data-i18n="form.type.firmware">펌웨어 / 임베디드</option>
+                <option value="maintenance" data-i18n="form.type.maintenance">유지보수 & 기술지원</option>
+                <option value="other" data-i18n="form.type.other">기타</option>
+              </select>
+              <span class="form-error" data-i18n="err.type">분야를 선택해 주세요.</span>
+            </div>
+            <div class="form-group">
+              <label for="budget" data-i18n="form.budget">예상 예산 (선택)</label>
+              <select id="budget" name="budget">
+                <option value="" disabled selected data-i18n="form.budget.placeholder">예산 범위를 선택하세요</option>
+                <option value="under100" data-i18n="form.budget.1">100만원 미만</option>
+                <option value="100-300" data-i18n="form.budget.2">100~300만원</option>
+                <option value="300-500" data-i18n="form.budget.3">300~500만원</option>
+                <option value="500-1000" data-i18n="form.budget.4">500만~1000만원</option>
+                <option value="over1000" data-i18n="form.budget.5">1000만원 이상</option>
+              </select>
+            </div>
+            <div class="form-group full">
+              <label for="message" data-i18n="form.message">프로젝트 내용</label>
+              <textarea id="message" name="message" rows="5" placeholder="개발하고 싶은 내용을 자유롭게 적어주세요." required></textarea>
+              <span class="form-error" data-i18n="err.message">내용을 입력해 주세요.</span>
+            </div>
+            <button type="submit" class="btn-submit" id="submitBtn">
+              <span data-i18n="form.submit">문의 보내기</span>
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+            <div class="form-success" id="formSuccess">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M22 11.08V12a10 10 0 11-5.93-9.14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <polyline points="22 4 12 14.01 9 11.01" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <p data-i18n="form.success">문의가 접수되었습니다! 빠른 시일 내에 연락드리겠습니다.</p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="nav-logo">
+            <div class="logo-icon small">
+              <span>A</span><span class="amp">&</span><span>N</span>
+            </div>
+            <div class="logo-text">
+              <span class="logo-main">A&N Dev</span>
+              <span class="logo-sub">에이엔디브</span>
+            </div>
+          </div>
+          <p data-i18n="footer.desc">소프트웨어부터 펌웨어까지,<br/>전문 개발팀이 함께합니다.</p>
+        </div>
+        <div class="footer-links">
+          <div class="footer-col">
+            <h5 data-i18n="footer.services">서비스</h5>
+            <ul>
+              <li><a href="#services" data-i18n="footer.web">웹 개발</a></li>
+              <li><a href="#services" data-i18n="footer.app">앱 개발</a></li>
+              <li><a href="#services" data-i18n="footer.firmware">펌웨어 개발</a></li>
+              <li><a href="#services" data-i18n="footer.maintenance">유지보수</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h5 data-i18n="footer.company">회사</h5>
+            <ul>
+              <li><a href="#process" data-i18n="footer.process">개발 프로세스</a></li>
+              <li><a href="#portfolio" data-i18n="footer.portfolio">포트폴리오</a></li>
+              <li><a href="#contact" data-i18n="footer.contact">문의</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 A&N Dev (에이엔디브). <span data-i18n="footer.rights">All rights reserved.</span></p>
+        <p data-i18n="footer.ceo.label">대표 노미선</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
