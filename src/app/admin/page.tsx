@@ -331,14 +331,16 @@ export default function AdminPage() {
                                 
                                 <div className="flex gap-4 mt-2">
                                   <a
-                                    href={`mailto:${item.email}?subject=[A%26N%20Dev]%20안녕하세요%2C%20의뢰해%20주신%20내용%20관련%20연락드립니다.`}
+                                    href={`https://mail.google.com/mail/?view=cm&fs=1&to=${item.email}&su=${encodeURIComponent("[A&N Dev] 안녕하세요, 의뢰해 주신 내용 관련 연락드립니다.")}`}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
                                     className="inline-flex items-center gap-1.5 bg-navy text-white text-xs font-bold py-2 px-4 rounded-lg hover:bg-teal-dark transition-colors cursor-pointer"
                                   >
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="w-3.5 h-3.5">
                                       <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
                                       <polyline points="22,6 12,13 2,6" />
                                     </svg>
-                                    이메일 회신
+                                    이메일 회신 (Gmail)
                                   </a>
                                 </div>
                               </div>
